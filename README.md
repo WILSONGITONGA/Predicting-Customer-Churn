@@ -38,9 +38,9 @@ Python will used for this project using some of its libraries.
 - Model Development.
 - Churn Prediction.
 # Steps Taken to Complete the Project.
-## .1 Import packages.
-All the libraries to e used were imported here.
-### .2 Data Collection
+## 1. Import packages.
+All the libraries to be used were imported here.
+### 2 Data Collection
 
 Loading the dataset into Python with Pandas.
 ### 3. Data Exploration
