@@ -40,7 +40,11 @@ Python will used for this project using some of its libraries.
 # Steps Taken to Complete the Project.
 ## 1. Import packages.
 All the libraries to be used were imported here.
+
+![Packages Loading.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Packages%20Loading.png)
+
 ### 2 Data Collection
+![Loading Data in python.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Loading%20Data%20in%20python.png)
 
 Loading the dataset into Python with Pandas.
 ### 3. Data Exploration
@@ -50,9 +54,12 @@ In Data Exploration, I aim to understand the data, and what it contains, this in
 - visualize the data to get insights,
 - check for missing values
 
+![Checking for Missing Values.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Checking%20for%20Missing%20Values.png)
+![Data Exploration.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Data%20Exploration.png)
 
 Next, we see how the target variable `ChurnLabel`, and some of the other variables are distributed.
-
+![Variables Distribution.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Variables%20Distribution.png)
+![Variables Distribution2.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Variables%20Distribution2.png)
 
 A few things to note from these visuals:
 - the dataset is almost evenly distributed between the `ChurnLabel=1` (churned) and `ChurnLabel=0` (not churned).
@@ -62,6 +69,7 @@ A few things to note from these visuals:
 
 **Correlation Analysis**: Here, we get to see which numerical features in the dataset correlates with ChurnLabel. A good understanding of the correlation in the dataset, means that one will understand which paramters might have a strong influence on the ChurnLabel.
 
+![Correlation with Churn Label.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Correlation%20with%20Churn%20Label.png)
 
 As seen above:
 - there is some moderate inverse correlation (-0.5407) between the `NPS` variable and the `ChurnLabel` variable. This `NPS` parameter should have some influence over the `ChurnLabel`.
@@ -69,11 +77,13 @@ As seen above:
 
 **Temporal Analysis:** Here, I will take a look at how the Churn rate changes over time, to see if there are any recurring patterns.
 
+![Monthly Churn Rate Over Time.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Monthly%20Churn%20Rate%20Over%20Time.png)
 
 The only thing can be easily observed from this visual is that there are always fluncutations in the churn rate over time, but it doesn't seem to indicated any yearly fluncutuation patterns.
 
 - I Will also need to see if there are any patterns between the customer feedback `Ratings` and the `ChurnLabel`. This should give us a basic understanding of whether or not the customer ratings are related to whether or not a customer will churn.
 
+![Relarionship between Feedback and Churn .png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Relarionship%20between%20Feedback%20and%20Churn%20.png)
 
 From the visual, there doesn't seem to be any indication that the `Feedback` rating affects the `ChurnLabel`.
 
@@ -87,7 +97,7 @@ In this Data Preprocessing and Feature Engineering step, I aim to achieve a few 
 - remove irrelevant features.
 
 **I plotted the correlation heatmap next to see how the features correlate with each other**
-
+![Feature Correlation Heat Map.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Feature%20Correlation%20Heat%20Map.png)
 
 As can be seen, if we focus on the `ChurnLabel`, we see that:
 - `NPS` exhibits some moderate negative correlation (-0.5) with the `ChurnLabel`,
@@ -116,9 +126,11 @@ A function for evaluating each of the models on any of the subset is created fir
 The final evaluation was done on the reserved test set (`X_test`, `y_test`)
 
 ### Confusion matrix for Logistic Regression.
-
+![Confusion Matrix on test for logistic Regression.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Confusion%20Matrix%20on%20test%20for%20logistic%20Regression.png)
 
 ### Confusion matrix for Decision Tree.
+
+![Confusion Matrix on Test Set for Decision Tree.png](https://github.com/WILSONGITONGA/Predicting-Customer-Churn/blob/main/Confusion%20Matrix%20on%20Test%20Set%20for%20Decision%20Tree.png)
 
 From the decision matrix of both models,
 - They both perform well at predicting customers that did not churn,
@@ -132,6 +144,6 @@ The parameters that are most important in determining whether or not a customer 
 - the time spent on the company's website,
 - and the Net Promoter Score (NPS) of the customer, which measures customer loyalty and satisfaction.
 
-  #### Project Completed By  Wilson Gitonga
+### Project Completed By  Wilson Gitonga
 www.wilsongitonga.com
 -- 
